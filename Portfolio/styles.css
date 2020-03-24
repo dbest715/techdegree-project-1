@@ -23,7 +23,7 @@ a:hover {
 
 /* Section Styles */
 
-.main-nav {
+.main-navigationbar {
   width: 100%;
   background: black;
   min-height: 30px;
@@ -31,20 +31,22 @@ a:hover {
   position: fixed;
   text-align: center;
 }
-.nav {
+.nav{
   display: flex;
   justify-content: space-around;
   font-weight: 700;
   list-style-type: none;
   margin: 0 auto;
-  padding: 0;
 }
 
-.nav .name {
-    display: block;
-    margin-right: auto;
-    color: white;
+.nav .logo {
+  display: block;
+  margin-right: auto;
+  color: white;
+  max-width: 150px;
+  overflow: hidden;
 }
+
 .nav li {
   padding: 5px 10px 10px 10px;
 }
@@ -69,12 +71,12 @@ header .profile-image {
   margin-top: 50px;
   width: 200px;
   height: 200px;
-  border-radius: 50%;
+  border-radius: 175%;
   border: 3px solid white;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.5) rotate(15deg);
+  transform: scale(1.5) rotate(360deg);
 }
 .intro {
   background-color: #0C7E96;
@@ -92,19 +94,29 @@ color: #6DC0C6;
 
 .intro3{
   background-color: #0C7E96;
-  color: #6DC0C6;
-  padding: 20px;
+  color:#6DC0C6;
+  padding: 30px;
   border-radius: 5px;
   margin: 30px auto;
   display: table;
-  }
+} 
+.textcolor {
+  color: #44ABBE;
+}
 
-.card:hover {
+.underline{
+  color:  #0c7e96;
+}
+
+.contentheading{
+  color: #0C7E96;
+}
+.bodycontent:hover {
   border-color: black;
 }
-.card {
-  margin: 30px;
-  padding: 20px 40px 40px;
+.bodycontent {
+  margin: 10px;
+  padding: 10px 20px 20px;
   max-width: 500px;
   text-align: left;
   background: #fff;
@@ -112,11 +124,11 @@ color: #6DC0C6;
   border-radius: 6px;
   transition: all .5s;
 }
-.card2:hover {
+.bodycontent2:hover {
   border-color: black;
 }
 
-.card2 {
+.bodycontent2 {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 2000px;
@@ -125,6 +137,12 @@ color: #6DC0C6;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
+}
+
+.list {
+  content: "\A";
+  white-space: pre;
+  overflow-wrap: break-word;
 }
 
 ul.skills {
@@ -149,12 +167,13 @@ ul.skills {
 footer {
   width: 100%;
   min-height: 30px;
-  padding: 20px 0 40px 20px;
+  padding: 20px 0 40px 0px;
 }
 
 footer .copyright {
   top: -8px;
-  font-size: .75em;
+  font-size: .50em;
+  color: white;
 }
 
 footer ul {
@@ -166,6 +185,7 @@ footer ul {
 footer ul li {
   display: inline-block;
 }
+
 
 a.social {
   display: inline-block;
