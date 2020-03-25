@@ -23,7 +23,7 @@ a:hover {
 
 /* Section Styles */
 
-.main-navigationbar {
+.main-nav {
   width: 100%;
   background: black;
   min-height: 30px;
@@ -45,6 +45,11 @@ a:hover {
   color: white;
   max-width: 150px;
   overflow: hidden;
+}
+
+.nav .logo-li {
+  margin-right: auto;
+  padding: 0;
 }
 
 .nav li {
@@ -78,9 +83,15 @@ header .profile-image {
 header .profile-image:hover {
   transform: scale(1.5) rotate(360deg);
 }
+
+.list-seperation {
+  margin-top: 1rem;
+  line-height: 2;
+}
+
 .intro {
-  background-color: #0C7E96;
-  color: #44ABBE;
+  background-color: #0D8CA5;
+  color: black;
   padding: 10px;
   border-radius: 5px;
   margin: 30px auto;
@@ -88,13 +99,13 @@ header .profile-image:hover {
 } 
 
 .intro2{
-background-color: #0c7e96;
-color: #6DC0C6;
+background-color: #0D8CA5;
+color: white;
 }
 
 .intro3{
-  background-color: #0C7E96;
-  color:#6DC0C6;
+  background-color: #0D8CA5;
+  color: white;
   padding: 30px;
   border-radius: 5px;
   margin: 30px auto;
@@ -111,30 +122,32 @@ color: #6DC0C6;
 .contentheading{
   color: #0C7E96;
 }
-.bodycontent:hover {
+.card:hover {
   border-color: black;
 }
-.bodycontent {
+.card {
   margin: 10px;
   padding: 10px 20px 20px;
   max-width: 500px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
+  border-left: 8px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
 }
-.bodycontent2:hover {
+.card2:hover {
   border-color: black;
 }
 
-.bodycontent2 {
+.card2 {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 2000px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
+  border-left: 8px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
 }
